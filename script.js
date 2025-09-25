@@ -140,12 +140,12 @@ function takeCommand(message){
 
     else if (message.includes("scroll down")) {
         speak("Scrolling down");
-        // 500 पिक्सल नीचे स्क्रॉल करता है
+       
         window.scrollBy(0, 500); 
     }
     else if (message.includes("scroll up")) {
         speak("Scrolling up");
-        // 500 पिक्सल ऊपर स्क्रॉल करता है
+        
         window.scrollBy(0, -500);
     }
     else if (message.includes("refresh") || message.includes("reload")) {
@@ -164,7 +164,7 @@ function takeCommand(message){
                 .replace("divided by", "/")
                 .trim();
             
-            // eval() स्ट्रिंग को एक गणितीय एक्सप्रेशन की तरह प्रोसेस करता है
+            
             let result = eval(calculation); 
             speak(`The answer is ${result}`);
         } catch (error) {
